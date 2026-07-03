@@ -1,0 +1,346 @@
+{% extends "base.html" %}
+
+{% block title %}About | HemoVision AI{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">About HemoVision AI</h1>
+        <p class="lead mt-3">
+            AI-Powered Multimodal Anemia Detection System using Eye Images,
+            Clinical Parameters and Geographic Risk Analysis.
+        </p>
+    </div>
+</section>
+
+<!-- About Project -->
+<section class="py-5">
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<h2 class="fw-bold mb-4 text-primary">
+About the Project
+</h2>
+
+<p class="text-muted">
+
+HemoVision AI is an intelligent healthcare platform designed to assist in
+the early detection of anemia using Artificial Intelligence.
+
+The system combines retinal/conjunctival eye image analysis with clinical
+blood parameters and regional geographic risk factors to improve prediction
+accuracy.
+
+The objective is to provide fast, affordable and accessible anemia
+screening while supporting healthcare professionals with AI-driven insights.
+
+</p>
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<img src="{{ url_for('static', filename='images/about.png') }}"
+class="img-fluid rounded shadow"
+alt="About">
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="bg-light py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="card shadow border-0 h-100">
+
+<div class="card-body">
+
+<h3 class="text-primary">
+🎯 Our Mission
+</h3>
+
+<p>
+
+To enable affordable, rapid and AI-assisted anemia screening,
+especially in underserved and rural communities.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow border-0 h-100">
+
+<div class="card-body">
+
+<h3 class="text-success">
+👁 Our Vision
+</h3>
+
+<p>
+
+To become an intelligent healthcare platform capable of assisting
+medical professionals through multimodal AI diagnosis and smart
+clinical decision support.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold text-primary mb-5">
+Key Features
+</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+
+<div class="card shadow border-0 h-100">
+
+<div class="card-body text-center">
+
+<h1>🤖</h1>
+
+<h4>AI Prediction</h4>
+
+<p>
+
+Deep Learning model predicts anemia from eye images
+combined with clinical parameters.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="card shadow border-0 h-100">
+
+<div class="card-body text-center">
+
+<h1>📊</h1>
+
+<h4>Analytics Dashboard</h4>
+
+<p>
+
+Interactive analytics for patient statistics,
+prediction trends and healthcare insights.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="card shadow border-0 h-100">
+
+<div class="card-body text-center">
+
+<h1>📄</h1>
+
+<h4>Smart Medical Reports</h4>
+
+<p>
+
+Automatically generates AI-powered medical reports
+with clinical interpretation and recommendations.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Technology -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold text-primary mb-5">
+Technology Stack
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-2 col-6 mb-4">
+<h4>🐍</h4>
+<p>Python</p>
+</div>
+
+<div class="col-md-2 col-6 mb-4">
+<h4>🔥</h4>
+<p>Flask</p>
+</div>
+
+<div class="col-md-2 col-6 mb-4">
+<h4>🧠</h4>
+<p>PyTorch</p>
+</div>
+
+<div class="col-md-2 col-6 mb-4">
+<h4>💾</h4>
+<p>SQLite</p>
+</div>
+
+<div class="col-md-2 col-6 mb-4">
+<h4>🎨</h4>
+<p>Bootstrap</p>
+</div>
+
+<div class="col-md-2 col-6 mb-4">
+<h4>🌐</h4>
+<p>HTML • CSS</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Workflow -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold text-primary mb-5">
+How HemoVision AI Works
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-2">
+<h1>📤</h1>
+<h5>Upload Image</h5>
+</div>
+
+<div class="col-md-1 d-none d-md-block">
+<h2>➡</h2>
+</div>
+
+<div class="col-md-2">
+<h1>🩸</h1>
+<h5>Enter Clinical Data</h5>
+</div>
+
+<div class="col-md-1 d-none d-md-block">
+<h2>➡</h2>
+</div>
+
+<div class="col-md-2">
+<h1>🤖</h1>
+<h5>AI Analysis</h5>
+</div>
+
+<div class="col-md-1 d-none d-md-block">
+<h2>➡</h2>
+</div>
+
+<div class="col-md-2">
+<h1>📄</h1>
+<h5>Medical Report</h5>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Developer -->
+
+<section class="bg-primary text-white py-5">
+
+<div class="container text-center">
+
+<h2 class="fw-bold mb-4">
+Developer
+</h2>
+
+<h3>Kashish Gupta</h3>
+
+
+</div>
+
+</section>
+
+<!-- Disclaimer -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="alert alert-warning shadow">
+
+<h4>⚠ Medical Disclaimer</h4>
+
+<p>
+
+HemoVision AI is developed for educational and research purposes.
+The predictions generated by this system are intended to assist
+healthcare professionals and should not replace clinical diagnosis,
+laboratory investigations or medical advice.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}
