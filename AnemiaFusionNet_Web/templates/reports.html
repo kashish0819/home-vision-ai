@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Reports | HemoVision AI{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Patient Reports
+    </h2>
+
+    <table class="table table-bordered table-hover shadow">
+
+        <thead class="table-dark">
+
+            <tr>
+
+                <th>ID</th>
+                <th>Patient</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Prediction</th>
+                <th>Confidence</th>
+                <th>Date</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% for row in reports %}
+
+        <tr>
+
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ "%.2f"|format(row[7]*100) }}%</td>
+            <td>{{ row[8] }}</td>
+
+            <td>
+
+                <a href="/download-report/{{ row[0] }}"
+                   class="btn btn-success btn-sm">
+
+                    📄 Download
+
+                </a>
+
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+{% endblock %}
