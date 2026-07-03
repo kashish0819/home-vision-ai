@@ -1,0 +1,356 @@
+{% extends "base.html" %}
+
+{% block title %}Contact | HemoVision AI{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Contact Us</h1>
+        <p class="lead mt-3">
+            We'd love to hear from you. Reach out for questions, feedback,
+            collaborations, or technical support.
+        </p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<!-- Contact Form -->
+
+<div class="col-lg-7">
+
+<div class="card shadow border-0">
+
+<div class="card-body p-4">
+
+<h3 class="text-primary mb-4">
+Send Us a Message
+</h3>
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">Full Name</label>
+
+<input
+type="text"
+class="form-control"
+placeholder="Enter your name"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">Email Address</label>
+
+<input
+type="email"
+class="form-control"
+placeholder="Enter your email"
+required>
+
+</div>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+Subject
+</label>
+
+<input
+type="text"
+class="form-control"
+placeholder="Subject">
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+Message
+</label>
+
+<textarea
+rows="6"
+class="form-control"
+placeholder="Write your message here..."
+required></textarea>
+
+</div>
+
+<div class="text-center">
+
+<button
+type="submit"
+class="btn btn-primary btn-lg">
+
+Send Message
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Contact Info -->
+
+<div class="col-lg-5">
+
+<div class="card shadow border-0 mb-4">
+
+<div class="card-body">
+
+<h3 class="text-success">
+Contact Information
+</h3>
+
+<hr>
+
+<p>
+
+<strong>Email</strong><br>
+
+support@hemovisionai.com
+
+</p>
+
+<p>
+
+<strong>Phone</strong><br>
+
++91 98765 43210
+
+</p>
+
+<p>
+
+<strong>Location</strong><br>
+
+India
+
+</p>
+
+<p>
+
+<strong>Working Hours</strong><br>
+
+Monday - Saturday<br>
+
+9:00 AM - 6:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card shadow border-0">
+
+<div class="card-body">
+
+<h3 class="text-primary">
+Connect With Us
+</h3>
+
+<hr>
+
+
+
+<a href="http://www.linkedin.com/in/kashish1908"
+class="btn btn-primary w-100 mb-3">
+
+💼 LinkedIn
+
+</a>
+
+<a href="mailto:support@hemovisionai.com"
+class="btn btn-danger w-100">
+
+📧 Email Us
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center text-primary fw-bold mb-5">
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="accordion" id="faqAccordion">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#faq1">
+
+What is HemoVision AI?
+
+</button>
+
+</h2>
+
+<div
+id="faq1"
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+HemoVision AI is an AI-powered multimodal anemia
+detection system that combines eye image analysis,
+clinical blood parameters, and geographic risk factors.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#faq2">
+
+Is this system a replacement for a doctor?
+
+</button>
+
+</h2>
+
+<div
+id="faq2"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+No. HemoVision AI is designed to assist healthcare
+professionals. Final diagnosis should always be made
+by qualified medical practitioners.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#faq3">
+
+How accurate is the AI model?
+
+</button>
+
+</h2>
+
+<div
+id="faq3"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+The AI model is trained using multimodal deep learning
+techniques. Accuracy depends on the quality of the
+uploaded eye image and clinical data.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer Card -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="card shadow border-0 bg-primary text-white">
+
+<div class="card-body text-center">
+
+<h2>
+
+HemoVision AI
+
+</h2>
+
+<p>
+
+Making Anemia Screening Smarter with Artificial Intelligence
+
+</p>
+
+<p class="mb-0">
+
+© 2026 HemoVision AI | Developed by Kashish Gupta
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}
