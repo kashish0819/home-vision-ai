@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Prediction | HemoVision AI{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h2 class="text-center text-danger mb-4">
+        AI Patient Screening
+    </h2>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <div class="mb-3">
+            <label>Patient Name</label>
+            <input type="text" class="form-control" name="patient_name" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Age</label>
+            <input type="number" class="form-control" name="age" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Gender</label>
+            <select class="form-control" name="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Hemoglobin</label>
+            <input type="number" step="0.1" class="form-control" name="hb">
+        </div>
+
+        <div class="mb-3">
+            <label>MCH</label>
+            <input type="number" step="0.1" class="form-control" name="mch">
+        </div>
+
+        <div class="mb-3">
+            <label>MCHC</label>
+            <input type="number" step="0.1" class="form-control" name="mchc">
+        </div>
+
+        <div class="mb-3">
+            <label>MCV</label>
+            <input type="number" step="0.1" class="form-control" name="mcv">
+        </div>
+
+        <div class="mb-3">
+            <label>State</label>
+
+            <select class="form-control" name="state">
+
+                <option>Gujarat</option>
+                <option>Maharashtra</option>
+                <option>Delhi</option>
+                <option>Punjab</option>
+                <option>Other</option>
+
+            </select>
+
+        </div>
+
+        <div class="mb-3">
+            <label>District</label>
+            <input type="text" class="form-control" name="district">
+        </div>
+
+        <div class="mb-3">
+            <label>Eye Image</label>
+            <input type="file" class="form-control" name="image" required>
+        </div>
+
+        <button class="btn btn-danger btn-lg w-100">
+            Analyze Patient
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}
