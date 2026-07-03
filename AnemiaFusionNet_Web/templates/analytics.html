@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block title %}Analytics | HemoVision AI{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+
+<div class="container">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold text-danger">
+            📊 Analytics Dashboard
+        </h1>
+
+        <p class="text-muted">
+            AI Prediction Statistics & Patient Analytics
+        </p>
+
+    </div>
+
+    <!-- Statistics Cards -->
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4">
+
+                <h5>Total Patients</h5>
+
+                <h2 class="text-primary">
+                    {{ total_patients }}
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4">
+
+                <h5>Anemia Cases</h5>
+
+                <h2 class="text-danger">
+                    {{ anemia_cases }}
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4">
+
+                <h5>Normal Cases</h5>
+
+                <h2 class="text-success">
+                    {{ normal_cases }}
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4">
+
+                <h5>Average Confidence</h5>
+
+                <h2 class="text-warning">
+                    {{ average_confidence }}%
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- Recent Predictions -->
+
+    <div class="card shadow border-0">
+
+        <div class="card-header py-3"
+     style="background: linear-gradient(135deg,#cd3636,#9b1c1c); color:white !important;">
+
+    <h4 class="mb-0 fw-bold text-white">
+        📋 Recent Predictions
+    </h4>
+
+</div>
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th>Patient</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>State</th>
+                            <th>Prediction</th>
+                            <th>Confidence</th>
+                            <th>Date</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    {% for row in records %}
+
+                        <tr>
+
+                            <td>{{ row.patient_id }}</td>
+
+                            <td>{{ row.age }}</td>
+
+                            <td>{{ row.gender }}</td>
+
+                            <td>{{ row.state }}</td>
+
+                            <td>
+
+                                {% if row.prediction == "Anemia" %}
+
+                                <span class="badge bg-danger">
+
+                                    {{ row.prediction }}
+
+                                </span>
+
+                                {% else %}
+
+                                <span class="badge bg-success">
+
+                                    {{ row.prediction }}
+
+                                </span>
+
+                                {% endif %}
+
+                            </td>
+
+                            <td>
+
+                                {{ "%.2f"|format(row.confidence*100) }}%
+
+                            </td>
+
+                            <td>{{ row.date }}</td>
+
+                        </tr>
+
+                    {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+{% endblock %}
