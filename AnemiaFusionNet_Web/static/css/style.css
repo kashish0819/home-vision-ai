@@ -1,0 +1,320 @@
+/* ======================================================
+   HemoVision AI
+   Professional Hospital Theme
+   ====================================================== */
+
+:root{
+
+    --primary:#cd3636;
+    --secondary:#1565C0;
+    --dark:#0F172A;
+    --light:#F4F8FB;
+    --white:#FFFFFF;
+    --gray:#6B7280;
+    --border:#E5E7EB;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:#1F2937;
+    overflow-x:hidden;
+
+}
+
+/* ===================== NAVBAR ===================== */
+
+.navbar{
+
+    background:#fff !important;
+
+    padding:18px 0;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--primary)!important;
+
+}
+
+.nav-link{
+
+    margin-left:18px;
+
+    color:#3b3a3a!important;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary)!important;
+
+}
+
+/* ===================== HERO ===================== */
+
+.hero{
+
+    min-height:92vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(244,248,251,.92),rgba(244,248,251,.92)),
+    url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero h1{
+
+    font-size:62px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:#25325c;
+
+}
+
+.hero span{
+
+    color:var(--primary);
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    margin-bottom:35px;
+
+    font-size:20px;
+
+    color:#353333;
+
+    line-height:1.8;
+
+}
+
+.hero-icon{
+
+    font-size:240px;
+
+    color:var(--primary);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-20px);}
+
+100%{transform:translateY(0);}
+
+}
+
+/* ===================== BUTTON ===================== */
+
+.btn-danger{
+
+    background:var(--primary);
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:15px 42px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-danger:hover{
+
+    background:#B71C1C;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-dark{
+
+    padding:15px 42px;
+
+    border-radius:12px;
+
+}
+
+/* ===================== SECTION ===================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+/* ===================== CARD ===================== */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card h4{
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ===================== STATISTICS ===================== */
+
+.bg-white{
+
+    background:white!important;
+
+}
+
+.bg-white h2{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.bg-white p{
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+/* ===================== FOOTER ===================== */
+
+.footer{
+
+    background:#fff;
+
+    margin-top:100px;
+
+    padding:70px 0;
+
+    border-top:1px solid #eee;
+
+}
+
+.footer h4{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.footer p{
+
+    color:#666;
+
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero-icon{
+
+font-size:140px;
+
+margin-top:50px;
+
+}
+
+.nav-link{
+
+margin-left:0;
+
+}
+
+}
