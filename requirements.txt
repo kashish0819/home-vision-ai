@@ -1,14 +1,129 @@
-Flask==3.1.2
-gunicorn==23.0.0
-numpy==2.3.2
-pandas==2.3.2
-Pillow==10.4.0
-opencv-python-headless==4.13.0.92
+# ==========================================================
+# AnemiaFusionNet - Production Requirements
+# ==========================================================
+
+# ==========================
+# Core Libraries
+# ==========================
+numpy>=2.3.0
+pandas>=2.3.0
+scipy>=1.16.0
+
+# ==========================
+# Computer Vision
+# ==========================
+opencv-python>=4.12.0
+Pillow>=11.3.0
+imageio>=2.37.0
+albumentations>=2.0.8
+
+# ==========================
+# Deep Learning
+# ==========================
 torch
 torchvision
-timm==1.0.27
-scikit-learn==1.8.0
-SQLAlchemy==2.0.51
-Flask-SQLAlchemy==3.1.1
-reportlab==4.4.3
-requests==2.34.2
+torchaudio
+timm>=1.0.27
+transformers>=4.54.0
+
+# ==========================
+# Machine Learning
+# ==========================
+scikit-learn>=1.7.0
+xgboost>=3.0.0
+joblib>=1.5.0
+
+# ==========================
+# Data Visualization
+# ==========================
+matplotlib>=3.10.0
+seaborn>=0.13.2
+plotly>=6.2.0
+
+# ==========================
+# Notebook Support
+# ==========================
+jupyter
+notebook
+ipykernel
+ipywidgets
+tqdm>=4.67.0
+
+# ==========================
+# FastAPI Backend
+# ==========================
+fastapi>=0.116.0
+uvicorn[standard]>=0.35.0
+python-multipart>=0.0.20
+
+# ==========================
+# Validation
+# ==========================
+pydantic>=2.11.0
+pydantic-settings>=2.10.0
+
+# ==========================
+# Database
+# ==========================
+SQLAlchemy>=2.0.0
+alembic>=1.16.0
+psycopg2-binary>=2.9.10
+
+# ==========================
+# Authentication
+# ==========================
+python-jose[cryptography]>=3.5.0
+passlib[bcrypt]>=1.7.4
+bcrypt>=4.3.0
+
+# ==========================
+# Environment
+# ==========================
+python-dotenv>=1.1.0
+
+# ==========================
+# HTTP
+# ==========================
+requests>=2.32.0
+httpx>=0.28.0
+
+# ==========================
+# Explainable AI
+# ==========================
+shap>=0.48.0
+lime>=0.2.0.1
+grad-cam>=1.5.5
+
+# ==========================
+# TensorBoard
+# ==========================
+tensorboard>=2.20.0
+
+# ==========================
+# Reports
+# ==========================
+reportlab>=4.4.0
+
+# ==========================
+# YAML
+# ==========================
+PyYAML>=6.0.2
+
+# ==========================
+# Logging
+# ==========================
+rich>=14.1.0
+colorama>=0.4.6
+
+# ==========================
+# Testing
+# ==========================
+pytest>=8.4.0
+pytest-asyncio>=1.1.0
+pytest-cov>=6.2.0
+
+# ==========================
+# Utilities
+# ==========================
+packaging>=25.0
+typing_extensions>=4.15.0
